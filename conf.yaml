@@ -1,0 +1,5 @@
+MysqlUrl : root:123456@tcp(127.0.0.1:3306)/collect?charset=utf8mb4
+RedisUrl : 127.0.0.1:6379
+RedisPassword : 123456
+AppId :
+AppSecret :
