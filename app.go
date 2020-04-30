@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"ginp/api"
 	"ginp/base"
+	"ginp/redispool"
+	"ginp/xrom_mysql"
 	"github.com/gin-gonic/gin"
 	"net/http"
      _ "net/http/pprof"
@@ -11,6 +13,8 @@ import (
 
 func init()  {
 	base.Config()
+	xrom_mysql.InitXorm()
+	redispool.InitRedis()
 }
 
 func main() {

@@ -9,7 +9,7 @@ import (
 
 var RedisPool  *redis.Pool
 
-func init()  {
+func InitRedis()  {
 
 	RedisPool =  &redis.Pool{
 		MaxIdle: base.RedisMaxIdle,

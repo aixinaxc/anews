@@ -9,7 +9,7 @@ import (
 
 var DataEngine *xorm.Engine
 
-func init()  {
+func InitXorm()  {
 	DataEngine,err := xorm.NewEngine("mysql",base.MysqlUrl)
 	if err != nil {
 		fmt.Println("mysql打开失败",err)
